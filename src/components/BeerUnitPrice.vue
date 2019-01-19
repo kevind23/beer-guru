@@ -2,7 +2,7 @@
     <div>
         <div class="regions">
             <select id="region-list" v-model="activeRegion" v-on:change="minUnitPrice = Number.MAX_VALUE">
-                <option disabled>
+                <option disabled value="">
                   Choose a region
                 </option>
                 <option v-for="region in Object.keys(beerSizes)" v-bind:value="region" v-bind:key="region">
@@ -56,6 +56,8 @@ export default class BeerUnitPrice extends Vue {
     'Victoria':
     [
       { name: 'Pot', metric: 285, isMin: false },
+      { name: 'Bottle', metric: 330, isMin: false },
+      { name: 'Can', metric: 375, isMin: false },
       { name: 'Schooner', metric: 425, isMin: false },
       { name: 'Pint', metric: 570, isMin: false },
       { name: 'Jug', metric: 1140, isMin: false },
@@ -64,6 +66,8 @@ export default class BeerUnitPrice extends Vue {
     'South Australia':
       [
       { name: 'Schooner', metric: 285, isMin: false },
+      { name: 'Bottle', metric: 330, isMin: false },
+      { name: 'Can', metric: 375, isMin: false },
       { name: 'Pint', metric: 425, isMin: false },
       { name: 'Imperial Pint', metric: 570, isMin: false },
       { name: 'Jug', metric: 1140, isMin: false },
@@ -72,6 +76,8 @@ export default class BeerUnitPrice extends Vue {
     'New South Wales':
       [
           { name: 'Middy/Half Pint', metric: 285, isMin: false },
+      { name: 'Bottle', metric: 330, isMin: false },
+      { name: 'Can', metric: 375, isMin: false },
           { name: 'Schooner', metric: 425, isMin: false },
           { name: 'Pint', metric: 570, isMin: false },
           { name: 'Jug', metric: 1140, isMin: false },
@@ -80,6 +86,8 @@ export default class BeerUnitPrice extends Vue {
     'Queensland':
     [
         { name: 'Pot', metric: 285, isMin: false },
+      { name: 'Bottle', metric: 330, isMin: false },
+      { name: 'Can', metric: 375, isMin: false },
         { name: 'Schooner', metric: 425, isMin: false },
         { name: 'Pint', metric: 570, isMin: false },
         { name: 'Jug', metric: 1140, isMin: false },
@@ -88,6 +96,8 @@ export default class BeerUnitPrice extends Vue {
     'Tasmania':
     [
         { name: 'Pot', metric: 285, isMin: false },
+      { name: 'Bottle', metric: 330, isMin: false },
+      { name: 'Can', metric: 375, isMin: false },
         { name: 'Schooner/Fifteen', metric: 425, isMin: false },
         { name: 'Pint', metric: 570, isMin: false },
         { name: 'Jug', metric: 1140, isMin: false },
@@ -96,6 +106,8 @@ export default class BeerUnitPrice extends Vue {
     'Northern Territory':
     [
         { name: 'Handle', metric: 285, isMin: false },
+      { name: 'Bottle', metric: 330, isMin: false },
+      { name: 'Can', metric: 375, isMin: false },
         { name: 'Schooner', metric: 425, isMin: false },
         { name: 'Pint', metric: 570, isMin: false },
         { name: 'Jug', metric: 1140, isMin: false },
@@ -104,6 +116,8 @@ export default class BeerUnitPrice extends Vue {
     'Western Australia':
     [
         { name: 'Middy/Half Pint', metric: 285, isMin: false },
+      { name: 'Bottle', metric: 330, isMin: false },
+      { name: 'Can', metric: 375, isMin: false },
         { name: 'Schooner', metric: 425, isMin: false },
         { name: 'Pint', metric: 570, isMin: false },
         { name: 'Jug', metric: 1140, isMin: false },
@@ -112,6 +126,8 @@ export default class BeerUnitPrice extends Vue {
     'New Zealand':
     [
         { name: 'Half-Pint', metric: 250, isMin: false },
+      { name: 'Bottle', metric: 330, isMin: false },
+      { name: 'Can', metric: 375, isMin: false },
         { name: 'Handle', metric: 425, isMin: false },
         { name: 'Pint', metric: 500, isMin: false },
         { name: 'Jug', metric: 900, isMin: false },
